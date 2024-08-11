@@ -1,0 +1,136 @@
+:root {
+  --width-default: 1200px;
+  --background-primaryColor: #101010;
+  --background-secondaryColor: #171717;
+  --background-gradient: linear-gradient(to bottom, #c41b27, #9f121d);
+  --font-family: "GT Walsheim";
+  --font-defaultColor: #c5c4c4;
+  --font-primaryColor: #c41b27;
+  --font-paragraph-defaultSize: 17px;
+  --font-entryHeading-defaultSize: 60px;
+  --font-heading-defaultSize: 35px;
+  --padding-default: 50px 0;
+  --padding-mobile: 0 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  color: var(--font-defaultColor);
+}
+
+body {
+  background: var(--background-primaryColor);
+  /* End Default Styles */
+}
+body h1 {
+  font-family: var(--font-family);
+  font-size: var(--font-entryHeading-defaultSize);
+}
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: var(--font-family);
+  font-size: var(--font-heading-defaultSize);
+}
+body p {
+  font-size: var(--font-paragraph-defaultSize);
+  margin: 0 0 15px;
+}
+body ul {
+  list-style-type: none;
+  display: flex;
+  gap: 25px;
+  letter-spacing: 1.5px;
+}
+body a {
+  text-decoration: none;
+}
+body .container {
+  max-width: var(--width-default);
+  width: 100%;
+  margin: 0 auto;
+}
+body .row {
+  display: flex;
+  justify-content: space-between;
+}
+body header {
+  background: var(--background-primaryColor);
+  padding: var(--padding-default);
+}
+body header h2 {
+  font-size: 45px;
+  font-weight: 200;
+  letter-spacing: 15px;
+}
+body header ul {
+  letter-spacing: 2px;
+}
+body #aboutMe {
+  background: var(--background-secondaryColor);
+}
+body #aboutMe .row {
+  gap: 50px;
+  align-items: center;
+}
+body #aboutMe .profile-section img {
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  animation: moveUpDown 4s ease-in-out infinite;
+}
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+    /* Adjust distance as needed */
+  }
+}
+body #aboutMe .title {
+  max-width: 600px;
+  padding: 20px 35px 30px 50px;
+}
+body #aboutMe .title p.name {
+  margin: 0;
+  letter-spacing: 1px;
+}
+body #aboutMe .title h3 {
+  letter-spacing: 2px;
+  color: var(--font-primaryColor);
+  margin: 0 0 25px;
+}
+body #aboutMe .title .row {
+  justify-content: start;
+}
+body #myWorks {
+  padding: var(--padding-default);
+}
+body #myWorks h3 {
+  color: var(--font-primaryColor);
+  margin: 0 0 25px;
+  letter-spacing: 2px;
+}
+body #myWorks .row {
+  max-width: 1000px;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+body #myWorks .row .wrapper {
+  background: var(--background-secondaryColor);
+  padding: 25px 30px;
+  max-width: 300px;
+}
+body #myWorks .row .wrapper h4 {
+  font-size: 25px;
+  margin: 0 0 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
