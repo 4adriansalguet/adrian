@@ -19,6 +19,7 @@
   padding: 0;
   font-family: var(--font-family);
   color: var(--font-defaultColor);
+  background: red;
 }
 
 body {
