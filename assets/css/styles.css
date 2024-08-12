@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  color: var(--font-defaultColor);
+}
+
 :root {
   --width-default: 1200px;
   --background-primaryColor: #101010;
@@ -5,20 +13,12 @@
   --background-gradient: linear-gradient(to bottom, #c41b27, #9f121d);
   --font-family: "GT Walsheim";
   --font-defaultColor: #c5c4c4;
-  --font-primaryColor: #c41b27;
+  --font-primaryColor: #a7232d;
   --font-paragraph-defaultSize: 17px;
   --font-entryHeading-defaultSize: 60px;
   --font-heading-defaultSize: 35px;
   --padding-default: 50px 0;
   --padding-mobile: 0 12px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-family);
-  color: var(--font-defaultColor);
 }
 
 body {
@@ -46,6 +46,7 @@ body ul {
   display: flex;
   gap: 25px;
   letter-spacing: 1.5px;
+  font-size: 20px;
 }
 body a {
   text-decoration: none;
@@ -55,6 +56,11 @@ body .container {
   width: 100%;
   margin: 0 auto;
 }
+body .container .logo img {
+  max-width: 250px;
+  height: 100px;
+  width: 100%;
+}
 body .row {
   display: flex;
   justify-content: space-between;
@@ -63,22 +69,17 @@ body header {
   background: var(--background-primaryColor);
   padding: var(--padding-default);
 }
-body header h2 {
-  font-size: 45px;
-  font-weight: 200;
-  letter-spacing: 15px;
-}
 body header ul {
   letter-spacing: 2px;
 }
-body #aboutMe {
+body #about {
   background: var(--background-secondaryColor);
 }
-body #aboutMe .row {
+body #about .row {
   gap: 50px;
   align-items: center;
 }
-body #aboutMe .profile-section img {
+body #about .profile-section img {
   max-width: 500px;
   width: 100%;
   position: relative;
@@ -93,44 +94,81 @@ body #aboutMe .profile-section img {
     /* Adjust distance as needed */
   }
 }
-body #aboutMe .title {
+body #about .title {
   max-width: 600px;
   padding: 20px 35px 30px 50px;
 }
-body #aboutMe .title p.name {
+body #about .title p.name {
   margin: 0;
   letter-spacing: 1px;
+  font-size: 18px;
 }
-body #aboutMe .title h3 {
+body #about .title p.name span {
+  font-size: 30px;
+  letter-spacing: 1.2px;
+}
+body #about .title h3 {
   letter-spacing: 2px;
-  color: var(--font-primaryColor);
+  color: var(--font-defaultColor);
   margin: 0 0 25px;
 }
-body #aboutMe .title .row {
+body #about .title h4 {
+  font-size: 25px;
+  margin: 0 0 5px;
+}
+body #about .title .row {
   justify-content: start;
 }
-body #myWorks {
+body #about .title p {
+  font-size: 18px;
+  line-height: 1.3em;
+}
+body #about .title span {
+  color: var(--font-primaryColor);
+}
+body #works {
   padding: var(--padding-default);
 }
-body #myWorks h3 {
+body #works h3 {
   color: var(--font-primaryColor);
   margin: 0 0 25px;
   letter-spacing: 2px;
+  text-align: center;
 }
-body #myWorks .row {
-  max-width: 1000px;
-  align-items: center;
-  margin: 0 auto;
-  justify-content: space-between;
+body #works .development {
+  text-align: center;
 }
-body #myWorks .row .wrapper {
+body #works .development i {
+  font-size: 100px;
+}
+body #works .development-content {
   background: var(--background-secondaryColor);
   padding: 25px 30px;
-  max-width: 300px;
+  max-width: 1100px;
+  margin: 0 auto 25px;
 }
-body #myWorks .row .wrapper h4 {
+body #works .development-content h4 {
   font-size: 25px;
   margin: 0 0 20px;
+}
+body #works .experience .row {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+body #works .experience .row i {
+  font-size: 30px;
+}
+body #works .experience .row i span {
+  font-size: 18px;
+}
+body #certificates {
+  background: var(--background-secondaryColor);
+  padding: var(--padding-default);
+}
+body #certificates h3 {
+  color: var(--font-primaryColor);
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

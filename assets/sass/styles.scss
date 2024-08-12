@@ -1,26 +1,32 @@
-
-
-:root {
-    --width-default: 1200px;
-    --background-primaryColor: #101010;
-    --background-secondaryColor: #171717;
-    --background-gradient: linear-gradient(to bottom, #c41b27, #9f121d);
-    --font-family: "GT Walsheim";
-    --font-defaultColor: #c5c4c4;
-    --font-primaryColor: #c41b27;
-    --font-paragraph-defaultSize: 17px;
-    --font-entryHeading-defaultSize: 60px;
-    --font-heading-defaultSize: 35px;
-    --padding-default: 50px 0;
-    --padding-mobile: 0 12px;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: var(--font-family);
     color: var(--font-defaultColor);
+}
+
+// @font-face {
+//     font-family: 'VT323';
+//     src:  url('/assets/font/VT323-Regular.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+:root {
+    --width-default: 1200px;
+    --background-primaryColor: #101010;
+    --background-secondaryColor: #171717;
+    --background-gradient: linear-gradient(to bottom, #c41b27, #9f121d);
+    --font-family: 'GT Walsheim';
+    --font-defaultColor: #c5c4c4;
+    --font-primaryColor: #a7232d;
+    --font-paragraph-defaultSize: 17px;
+    --font-entryHeading-defaultSize: 60px;
+    --font-heading-defaultSize: 35px;
+    --padding-default: 50px 0;
+    --padding-mobile: 0 12px;
 }
 
 body{
@@ -51,6 +57,7 @@ body{
         display: flex;
         gap: 25px;
         letter-spacing: 1.5px;
+        font-size: 20px;
     }
 
     a {
@@ -61,6 +68,12 @@ body{
         max-width: var(--width-default);
         width: 100%;
         margin: 0 auto;
+
+        .logo img {
+            max-width: 250px;
+            height: 100px;
+            width: 100%;
+        }
     }
 
     .row {
@@ -74,12 +87,6 @@ body{
         background: var(--background-primaryColor);
         padding: var(--padding-default);
 
-        h2 {
-            font-size: 45px;
-            font-weight: 200;
-            letter-spacing: 15px;
-        }
-
         ul {
             letter-spacing: 2px;
         }  
@@ -87,7 +94,7 @@ body{
 
     // End Header Styles
 
-    #aboutMe {
+    #about {
         background: var(--background-secondaryColor);
 
         .row {
@@ -123,44 +130,85 @@ body{
             p.name {
                 margin: 0;
                 letter-spacing: 1px;
+                font-size: 18px;
+                span {
+                    font-size: 30px;
+                    letter-spacing: 1.2px;
+                }
             }
             h3 {
                 letter-spacing: 2px;
-                color: var(--font-primaryColor);
+                color: var(--font-defaultColor);
                 margin: 0 0 25px;
+            }
+
+            h4 {
+                font-size: 25px;
+                margin: 0 0 5px;
             }
 
             .row {
                 justify-content: start;
             }
+            p {
+                font-size: 18px;
+                line-height: 1.3em;
+            }
+            span {
+                color: var(--font-primaryColor);
+            }
         }
 
     }
 
-    #myWorks {
+    #works {
         padding: var(--padding-default);
         h3 {
             color: var(--font-primaryColor);
             margin: 0 0 25px;
             letter-spacing: 2px;
+            text-align: center;
         }
-        
-        .row {
-            max-width: 1000px;
-            align-items: center;
-            margin: 0 auto;
-            justify-content: space-between;
 
-            .wrapper {
+        .development {
+            text-align: center;
+            i {
+                font-size: 100px;
+
+            }
+        }
+
+         .development-content {
                 background: var(--background-secondaryColor);
                 padding: 25px 30px;
-                max-width: 300px;
+                max-width: 1100px;
+                margin: 0 auto 25px;
 
                 h4 {
                     font-size: 25px;
                     margin: 0 0 20px;
                 }
             }
+
+        .experience .row {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            i {
+                font-size: 30px;
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    #certificates {
+        background: var(--background-secondaryColor);
+        padding: var(--padding-default);
+        h3 {
+            color: var(--font-primaryColor);
+            text-align: center;
         }
     }
 
