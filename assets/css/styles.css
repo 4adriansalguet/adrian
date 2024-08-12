@@ -151,6 +151,9 @@ body #works .development-content h4 {
   font-size: 25px;
   margin: 0 0 20px;
 }
+body #works .development-content p {
+  line-height: 1.4em;
+}
 body #works .experience .row {
   max-width: 900px;
   width: 100%;
