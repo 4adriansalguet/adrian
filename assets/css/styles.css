@@ -10,7 +10,7 @@
   --width-default: 1200px;
   --background-primaryColor: #101010;
   --background-secondaryColor: #171717;
-  --background-gradient: linear-gradient(to bottom, #c41b27, #9f121d);
+  --background-gradient: linear-gradient(to right, #9f121d, #c41b27);
   --font-family: "GT Walsheim";
   --font-defaultColor: #c5c4c4;
   --font-primaryColor: #a7232d;
@@ -64,6 +64,20 @@ body .container .logo img {
 body .row {
   display: flex;
   justify-content: space-between;
+}
+body .btn {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  background: var(--background-gradient);
+  padding: 20px 50px;
+  transition: 0.5s ease;
+}
+body .btn:hover {
+  background: transparent;
+  border: 3px solid var(--font-defaultColor);
+  transition: 0.5s all;
 }
 body header {
   background: var(--background-primaryColor);
@@ -172,6 +186,29 @@ body #certificates {
 body #certificates h3 {
   color: var(--font-primaryColor);
   text-align: center;
+}
+body #certificates .certificates-container {
+  display: flex;
+  justify-content: center;
+  padding: var(--padding-default);
+}
+body #certificates .certificates-container img {
+  max-width: 550px;
+}
+body #projects {
+  background: var(--background-primaryColor);
+  padding: var(--padding-default);
+}
+body #projects h3 {
+  text-align: center;
+  color: var(--font-primaryColor);
+}
+body #projects .projects-container {
+  padding: 30px 0;
+}
+body #projects .projects-container h4 {
+  font-size: 25px;
+  margin: 0 0 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */
