@@ -53,7 +53,7 @@ body header {
   position: relative;
   overflow: hidden;
 }
-body header ::before {
+body header::before {
   content: "";
   position: absolute;
   top: 0;
@@ -69,16 +69,16 @@ body header .content {
   position: relative;
   z-index: 1;
 }
-body header nav .row {
+body header .content nav .row {
   justify-content: space-between;
   align-items: center;
 }
-body header nav h3 {
+body header .content nav h3 {
   font-size: 50px;
   color: var(--color-primary);
   letter-spacing: 1px;
 }
-body header nav ul {
+body header .content nav ul {
   max-width: 885px;
   width: 100%;
   display: flex;
@@ -87,31 +87,31 @@ body header nav ul {
   font-size: 1.188rem;
   letter-spacing: 0.625;
 }
-body header nav ul li, body header nav ul a {
+body header .content nav ul li, body header .content nav ul a {
   color: var(--color-primary);
 }
-body header nav ul li i.fa-envelopes-bulk {
+body header .content nav ul li i.fa-envelopes-bulk {
   font-size: 1.2rem;
   color: var(--color-secondary);
   margin: 0 7px 0 0;
 }
-body header .title {
+body header .content .title {
   text-align: center;
   color: var(--color-primary);
 }
-body header .title h1 {
+body header .content .title h1 {
   font-size: 60px;
   letter-spacing: 1.5px;
 }
-body header .title h2 {
+body header .content .title h2 {
   font-size: 75px;
   letter-spacing: 7px;
   line-height: 75px;
 }
-body header .title h2 span {
+body header .content .title h2 span {
   color: var(--color-secondary);
 }
-body header i {
+body header .content i {
   position: relative;
   z-index: 1;
 }

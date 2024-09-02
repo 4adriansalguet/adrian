@@ -58,7 +58,7 @@ body{
         position: relative;
         overflow: hidden;
 
-        ::before {
+        &::before {
         content: "";
         position: absolute;
         top: 0;
@@ -74,8 +74,6 @@ body{
         .content {
         position: relative;
         z-index: 1;
-        }
-        
         nav {
 
             .row {
@@ -138,6 +136,8 @@ body{
             position: relative;
             z-index: 1;
         }
+        
+        } 
 
     }
 
