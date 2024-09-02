@@ -7,9 +7,12 @@
 :root {
   --heading-font: "Anton";
   --primary-font: "Montserrat";
+  --color-default: #000000;
   --color-primary: #FFFFFF;
   --color-secondary: #D4AF37;
   --color-tertiary: #222226;
+  --color-shadow: #1B1B1E;
+  --color-form-field: #34353A;
   --color-body: #2E2F34;
 }
 
@@ -19,11 +22,11 @@ h3,
 h5,
 h6 {
   font-family: var(--heading-font);
+  text-shadow: 6px 7px 10px var(--color-shadow);
 }
 
 h3 {
   text-align: center;
-  font-family: var(--heading-font);
   font-size: 50px;
   font-weight: 400;
   color: var(--color-secondary);
@@ -34,10 +37,19 @@ h4 {
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 2px;
+  text-shadow: 6px 7px 10px var(--color-shadow);
 }
 
 p {
   font-family: var(--primary-font);
+}
+
+p.highlighted {
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 23px;
+  margin: 0 0 15px;
+  text-shadow: 6px 7px 10px var(--color-shadow);
 }
 
 ul {
@@ -148,23 +160,34 @@ body #about .row {
   justify-content: space-between;
   align-items: center;
 }
-body #about .row .profile-section img {
+body #about .row .profile-section {
   position: relative;
 }
-body #about .row .profile-section img::before {
+body #about .row .profile-section::after {
   position: absolute;
-  right: 0;
+  right: -15px;
+  bottom: -10px;
   content: "";
-  width: 10px;
+  width: 350px;
+  height: 350px;
   background: #D4AF37;
+  z-index: -1;
+}
+body #about .row .profile-section img {
+  position: relative;
+  background: var(--color-default);
 }
 body #about .row .short-background {
   max-width: 645px;
   width: 100%;
   color: var(--color-primary);
 }
+body #about .row .short-background h4 {
+  margin: 0 0 20px;
+}
 body #about .row .short-background p {
   font-size: 20px;
+  line-height: 32px;
 }
 body #about .row .short-background table {
   border-collapse: collapse;
@@ -179,7 +202,180 @@ body #about .row .short-background td:nth-child(2) {
   padding: 0 30px 0;
 }
 body #about .row .short-background .btn {
-  margin: 55px 0 0;
+  margin: 60px 0 0;
+}
+body #interests .container {
+  max-width: 1258px;
+  width: 100%;
+  padding: 30px 0;
+}
+body #interests .container h3 {
+  margin: 0 0 40px;
+}
+body #interests .container p.highlighted {
+  color: var(--color-secondary);
+}
+body #interests .container p {
+  font-size: 20px;
+  color: var(--color-primary);
+}
+body #interests .container .row {
+  column-gap: 20px;
+}
+body #interests .container .btn {
+  margin: 60px 0 0;
+}
+body #projects .container {
+  max-width: 1258px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+body #projects .container h3 {
+  margin: 50px 0 40px;
+}
+body #projects .container .row {
+  justify-content: space-between;
+  margin: 0 auto 60px;
+}
+body #projects .container .item {
+  max-width: 600px;
+  width: 100%;
+  height: 454px;
+  background: var(--color-tertiary);
+  box-shadow: 6px 7px 10px var(--color-shadow);
+  color: var(--color-primary);
+  padding: 60px 50px;
+  border-radius: 5px;
+}
+body #projects .container .item h4 {
+  margin: 0 0 35px;
+}
+body #projects .container .item p {
+  line-height: 30px;
+}
+body #projects .container .item .btn {
+  font-size: 23px;
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  border-radius: 50%;
+  padding: 12px;
+  margin: 40px 0 0;
+}
+body #experience .container {
+  max-width: 1258px;
+  width: 100%;
+  padding: 30px 0;
+}
+body #experience .container h3 {
+  margin: 20px 0 40px;
+}
+body #experience .container h4 {
+  margin: 0 0 30px;
+}
+body #experience .container .item {
+  height: 454px;
+  background: var(--color-tertiary);
+  box-shadow: 6px 7px 10px var(--color-shadow);
+  color: var(--color-primary);
+  padding: 60px 50px;
+  border-radius: 5px;
+  margin: 0 auto 60px;
+}
+body #experience .container p.highlighted {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+body #experience .container p {
+  font-size: 19px;
+  line-height: 30px;
+}
+body #experience .container .skills {
+  margin: 40px 0 0;
+}
+body #experience .container .skills .row {
+  column-gap: 20px;
+}
+body footer {
+  background: url("../images/dropshadow-inverted.png") center no-repeat;
+  background-size: cover;
+  height: 810px;
+}
+body footer .container {
+  max-width: 1258px;
+  width: 100%;
+  padding: 30px 0;
+}
+body footer .form-wrapper {
+  background: var(--color-tertiary);
+  box-shadow: 6px 7px 10px var(--color-shadow);
+  border-radius: 5px;
+  padding: 50px 70px;
+}
+body footer .form-wrapper h4 {
+  text-align: center;
+  color: var(--color-primary);
+  margin: 0 0 40px;
+}
+body footer .form-wrapper form {
+  max-width: 1096px;
+  width: 100%;
+  margin: 0 auto;
+}
+body footer .form-wrapper form .row {
+  justify-content: space-between;
+  margin: 0 0 15px;
+}
+body footer .form-wrapper form .form-group {
+  margin-bottom: 15px;
+}
+body footer .form-wrapper form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+body footer .form-wrapper form .form-group input {
+  width: 530px;
+  height: 66px;
+  padding: 15px;
+  background: var(--color-form-field);
+  border-radius: 5px;
+  border-color: transparent;
+  color: var(--color-primary);
+}
+body footer .form-wrapper form .form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border-color: transparent;
+  border-radius: 5px;
+  background: var(--color-form-field);
+  color: var(--color-primary);
+}
+body footer .form-wrapper form .form-group input:focus,
+body footer .form-wrapper form .form-group textarea:focus {
+  border-color: #D4AF37;
+  outline: none;
+}
+body footer .form-wrapper form .form-group input::placeholder,
+body footer .form-wrapper form .form-group textarea::placeholder {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: #8D8D8D;
+}
+body footer .form-wrapper form .btn {
+  display: flex;
+  justify-content: center;
+  margin: 35px auto 0;
+}
+body footer p {
+  text-align: center;
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 50px 0 0;
 }
 
 /*# sourceMappingURL=styles.csss.map */
