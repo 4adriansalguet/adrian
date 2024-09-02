@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -299,37 +300,40 @@ body #experience .container .skills .row {
 body footer {
   background: url("../images/dropshadow-inverted.png") center no-repeat;
   background-size: cover;
-  height: 810px;
+  height: 860px;
+}
+body footer h3 {
+  margin: 0 0 40px;
 }
 body footer .container {
   max-width: 1258px;
   width: 100%;
   padding: 30px 0;
 }
-body footer .form-wrapper {
+body footer .container .form-wrapper {
   background: var(--color-tertiary);
   box-shadow: 6px 7px 10px var(--color-shadow);
   border-radius: 5px;
   padding: 50px 70px;
 }
-body footer .form-wrapper h4 {
+body footer .container .form-wrapper h4 {
   text-align: center;
   color: var(--color-primary);
   margin: 0 0 40px;
 }
-body footer .form-wrapper form {
+body footer .container .form-wrapper form {
   max-width: 1096px;
   width: 100%;
   margin: 0 auto;
 }
-body footer .form-wrapper form .row {
+body footer .container .form-wrapper form .row {
   justify-content: space-between;
   margin: 0 0 15px;
 }
-body footer .form-wrapper form .form-group {
+body footer .container .form-wrapper form .form-group {
   margin-bottom: 15px;
 }
-body footer .form-wrapper form .form-group label {
+body footer .container .form-wrapper form .form-group label {
   display: block;
   margin-bottom: 5px;
   font-family: var(--primary-font);
@@ -337,7 +341,7 @@ body footer .form-wrapper form .form-group label {
   font-weight: 400;
   color: var(--color-secondary);
 }
-body footer .form-wrapper form .form-group input {
+body footer .container .form-wrapper form .form-group input {
   width: 530px;
   height: 66px;
   padding: 15px;
@@ -346,7 +350,7 @@ body footer .form-wrapper form .form-group input {
   border-color: transparent;
   color: var(--color-primary);
 }
-body footer .form-wrapper form .form-group textarea {
+body footer .container .form-wrapper form .form-group textarea {
   width: 100%;
   padding: 15px;
   border-color: transparent;
@@ -354,18 +358,18 @@ body footer .form-wrapper form .form-group textarea {
   background: var(--color-form-field);
   color: var(--color-primary);
 }
-body footer .form-wrapper form .form-group input:focus,
-body footer .form-wrapper form .form-group textarea:focus {
+body footer .container .form-wrapper form .form-group input:focus,
+body footer .container .form-wrapper form .form-group textarea:focus {
   border-color: #D4AF37;
   outline: none;
 }
-body footer .form-wrapper form .form-group input::placeholder,
-body footer .form-wrapper form .form-group textarea::placeholder {
+body footer .container .form-wrapper form .form-group input::placeholder,
+body footer .container .form-wrapper form .form-group textarea::placeholder {
   font-family: var(--primary-font);
   font-size: 16px;
   color: #8D8D8D;
 }
-body footer .form-wrapper form .btn {
+body footer .container .form-wrapper form .btn {
   display: flex;
   justify-content: center;
   margin: 35px auto 0;

@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -376,91 +377,97 @@ body {
     footer {
         background: url("../images/dropshadow-inverted.png")center no-repeat;
         background-size: cover;
-        height: 810px;
+        height: 860px;
+
+        h3 {
+            margin: 0 0 40px;
+        }
 
         .container {
             max-width: 1258px;
             width: 100%;
             padding: 30px 0;
-        }
 
-        .form-wrapper {
+            .form-wrapper {
 
-            background: var(--color-tertiary);
-            box-shadow: 6px 7px 10px var(--color-shadow);
-            border-radius: 5px;
-            padding: 50px 70px;
+                background: var(--color-tertiary);
+                box-shadow: 6px 7px 10px var(--color-shadow);
+                border-radius: 5px;
+                padding: 50px 70px;
 
-            h4 {
-                text-align: center;
-                color: var(--color-primary);
-                margin: 0 0 40px;
-            }
-
-            form {
-                max-width: 1096px;
-                width: 100%;
-                margin: 0 auto;
-
-                .row {
-                    justify-content: space-between;
-                    margin: 0 0 15px;
-                }
-
-                .form-group {
-                    margin-bottom: 15px;
-                }
-    
-                .form-group label {
-                    display: block;
-                    margin-bottom: 5px;
-                    font-family: var(--primary-font);
-                    font-size: 16px;
-                    font-weight: 400;
-                    color: var(--color-secondary);
-                }
-    
-                .form-group input {
-                    width: 530px;
-                    height: 66px;
-                    padding: 15px;
-                    background: var(--color-form-field);
-                    border-radius: 5px;
-                    border-color: transparent;
+                h4 {
+                    text-align: center;
                     color: var(--color-primary);
+                    margin: 0 0 40px;
                 }
-    
-                .form-group textarea {
+
+                form {
+                    max-width: 1096px;
                     width: 100%;
-                    padding: 15px;
-                    border-color: transparent;
-                    border-radius: 5px;
-                    background: var(--color-form-field);
-                    color: var(--color-primary);
-                }
-    
-                .form-group input:focus,
-                .form-group textarea:focus {
-                    border-color: #D4AF37;
-                    outline: none;
-                }
+                    margin: 0 auto;
 
-                .form-group input::placeholder,
-                .form-group textarea::placeholder {
-                    font-family: var(--primary-font);
-                    font-size: 16px;
-                    color: #8D8D8D;
-                }
+                    .row {
+                        justify-content: space-between;
+                        margin: 0 0 15px;
+                    }
 
-                .btn {
-                    display: flex;
-                    justify-content: center;
-                    margin: 35px auto 0;
+                    .form-group {
+                        margin-bottom: 15px;
+                    }
+
+                    .form-group label {
+                        display: block;
+                        margin-bottom: 5px;
+                        font-family: var(--primary-font);
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: var(--color-secondary);
+                    }
+
+                    .form-group input {
+                        width: 530px;
+                        height: 66px;
+                        padding: 15px;
+                        background: var(--color-form-field);
+                        border-radius: 5px;
+                        border-color: transparent;
+                        color: var(--color-primary);
+                    }
+
+                    .form-group textarea {
+                        width: 100%;
+                        padding: 15px;
+                        border-color: transparent;
+                        border-radius: 5px;
+                        background: var(--color-form-field);
+                        color: var(--color-primary);
+                    }
+
+                    .form-group input:focus,
+                    .form-group textarea:focus {
+                        border-color: #D4AF37;
+                        outline: none;
+                    }
+
+                    .form-group input::placeholder,
+                    .form-group textarea::placeholder {
+                        font-family: var(--primary-font);
+                        font-size: 16px;
+                        color: #8D8D8D;
+                    }
+
+                    .btn {
+                        display: flex;
+                        justify-content: center;
+                        margin: 35px auto 0;
+                    }
+
                 }
 
             }
 
         }
+
 
         p {
             text-align: center;
