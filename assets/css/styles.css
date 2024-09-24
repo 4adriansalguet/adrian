@@ -276,6 +276,20 @@ body #about .row .short-background .btn {
     margin: 20px auto 0;
   }
 }
+@media screen and (max-width: 500px) {
+  body #about .row .profile-section::after {
+    right: -10px;
+    bottom: -5px;
+    width: 300px;
+    height: 300px;
+  }
+  body #about .row .profile-section img {
+    width: 100%;
+  }
+  body #about .row .short-background td:nth-child(2) {
+    padding: 0 10px 0;
+  }
+}
 body #interests .container {
   max-width: 1258px;
   width: 100%;

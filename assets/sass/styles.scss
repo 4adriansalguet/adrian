@@ -344,6 +344,29 @@ body {
             }
         }
 
+        @media screen and (max-width: 500px) {
+            .row {
+                .profile-section {
+                    &::after {
+                        right: -10px;
+                        bottom: -5px;
+                        width: 300px;
+                        height: 300px;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .short-background {
+                    td:nth-child(2) {
+                        padding: 0 10px 0;
+                    }
+                }
+            }
+        }
+
     }
 
     #interests {
