@@ -76,7 +76,7 @@ a {
 
 .container {
     max-width: 1600px;
-    padding: 30px 32px;
+    padding: 30px 20px 32px;
     margin: 0 auto;
 }
 
@@ -95,15 +95,14 @@ body {
     header {
         background: url('../images/banner.jpg')center no-repeat;
         background-size: cover;
-        height: 750px;
+        min-height: 750px;
         position: relative;
-        z-index: 1;
 
         &::after {
             content: "";
             background: linear-gradient(transparent 90%, rgba(0, 0, 0, 0.5));
             width: 100%;
-            height: 100%;
+            min-height: 750px;
             position: absolute;
             top: 0;
             left: 0;
@@ -184,12 +183,45 @@ body {
 
         }
 
+        @media screen and (max-width: 768px) {
+            &::after {
+                min-height: 0;
+            }
+
+            nav {
+                .row {
+                    justify-content: center;
+                }
+
+                ul {
+                    display: none;
+                }
+            }
+
+            .title {
+                margin: 85px 0;
+
+                h1 {
+                    font-size: 30px;
+                    letter-spacing: 1.5px;
+                }
+
+                h2 {
+                    font-size: 45px;
+                    letter-spacing: 3px;
+                }
+
+                .btn {
+                    width: auto;
+                }
+            }
+        }
     }
 
     #about {
         background: url("../images/background-shadow.png")center no-repeat;
         background-size: cover;
-        height: 750px;
+        min-height: 750px;
         filter: drop-shadow(0px 0px 15px black);
 
         h3 {
@@ -261,6 +293,32 @@ body {
 
         }
 
+        @media screen and (max-width: 1100px) {
+
+
+            .container {
+
+                h3 {
+                    font-size: 30px;
+                }
+
+                .row {
+                    margin: 0 auto;
+                    flex-direction: column;
+                    gap: 50px;
+
+                    .short-background {
+                        text-align: center;
+
+                        .short-background table {
+                            margin: 40px auto 0px;
+                        }
+                    }
+                }
+            }
+
+        }
+
     }
 
     #interests {
@@ -293,6 +351,20 @@ body {
             }
 
         }
+
+        @media screen and (max-width:1100px) {
+
+            .container {
+                text-align: center;
+
+                .row {
+                    column-gap: 20px;
+                    justify-content: center;
+                }
+            }
+
+        }
+
     }
 
     #projects {
@@ -310,12 +382,14 @@ body {
             .row {
                 justify-content: space-between;
                 margin: 0 auto 60px;
+                flex-wrap: wrap;
+                gap: 40px;
             }
 
             .item {
                 max-width: 600px;
                 width: 100%;
-                height: 454px;
+                min-height: 454px;
                 background: var(--color-tertiary);
                 box-shadow: 6px 7px 10px var(--color-shadow);
                 color: var(--color-primary);
@@ -343,6 +417,16 @@ body {
 
         }
 
+        @media screen and (max-width: 1100px) {
+
+            .container {
+                .row {
+                    justify-content: center;
+                }
+            }
+
+        }
+
     }
 
     #experience {
@@ -350,7 +434,7 @@ body {
         .container {
             max-width: 1258px;
             width: 100%;
-            padding: 30px 0;
+            padding: 30px 20px;
 
             h3 {
                 margin: 20px 0 40px;
@@ -361,7 +445,7 @@ body {
             }
 
             .item {
-                height: 454px;
+                min-height: 454px;
                 background: var(--color-tertiary);
                 box-shadow: 6px 7px 10px var(--color-shadow);
                 color: var(--color-primary);
@@ -402,7 +486,7 @@ body {
         .container {
             max-width: 1258px;
             width: 100%;
-            padding: 30px 0;
+            padding: 30px 20px;
 
             .form-wrapper {
 
@@ -443,7 +527,8 @@ body {
                     }
 
                     .form-group input {
-                        width: 530px;
+                        width: 100%;
+                        min-width: 530px;
                         height: 66px;
                         padding: 15px;
                         background: var(--color-form-field);
@@ -493,6 +578,17 @@ body {
             font-size: 14px;
             font-weight: 500;
             margin: 50px 0 0;
+        }
+
+        @media screen and (max-width: 1100px) {
+            form {
+                .row {
+                    justify-content: space-between;
+                    margin: 0 0 15px;
+                    gap: 20px;
+                    flex-direction: column;
+                }
+            }
         }
 
     }
