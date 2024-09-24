@@ -140,7 +140,7 @@ body {
                 justify-content: space-between;
                 font-family: var(--primary-font);
                 font-size: 1.188rem;
-                letter-spacing: 0.625;
+                letter-spacing: 0.625px;
 
                 li,
                 a {
@@ -193,6 +193,10 @@ body {
             nav {
                 .row {
                     column-gap: 30px;
+
+                    ul {
+                        font-size: 0.9rem;
+                    }
                 }
             }
         }
