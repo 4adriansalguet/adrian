@@ -295,12 +295,7 @@ body {
 
         @media screen and (max-width: 1100px) {
 
-
             .container {
-
-                h3 {
-                    font-size: 30px;
-                }
 
                 .row {
                     margin: 0 auto;
@@ -316,7 +311,32 @@ body {
                     }
                 }
             }
+        }
 
+        @media screen and (max-width: 768px) {
+            .container {
+
+                .row {
+                    .short-background {
+
+                        h4 {
+                            font-size: 25px;
+                        }
+
+                        p {
+                            font-size: 17px;
+                            line-height: 30px;
+                        }
+
+                        table {
+                            border-collapse: collapse;
+                            font-family: var(--primary-font);
+                            margin: 20px auto 0;
+                        }
+
+                    }
+                }
+            }
         }
 
     }
@@ -373,7 +393,7 @@ body {
             max-width: 1258px;
             width: 100%;
             margin: 0 auto;
-            padding: 30px 0;
+            padding: 30px 20px;
 
             h3 {
                 margin: 50px 0 40px;
@@ -427,6 +447,20 @@ body {
 
         }
 
+        @media screen and (max-width: 768px) {
+            .container {
+                .item {
+                    max-width: unset;
+                    min-height: 0;
+                    padding: 30px 35px;
+
+                    p {
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+
     }
 
     #experience {
@@ -468,10 +502,20 @@ body {
                 margin: 40px 0 0;
 
                 .row {
+                    flex-wrap: wrap;
                     column-gap: 20px;
                 }
             }
 
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                p {
+                    font-size: 17px;
+                    line-height: 25px;
+                }
+            }
         }
 
     }
@@ -591,6 +635,41 @@ body {
             }
         }
 
+        @media screen and (max-width: 768px) {
+            .container {
+
+                .form-wrapper {
+                    background: var(--color-tertiary);
+                    box-shadow: 6px 7px 10px var(--color-shadow);
+                    border-radius: 5px;
+                    padding: 45px 35px;
+
+                    form {
+                        .form-group {
+                            input {
+                                min-width: 0;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    p.highlighted {
+        font-size: 20px;
+    }
 }
