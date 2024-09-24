@@ -352,10 +352,10 @@ body {
             .row {
                 .profile-section {
                     &::after {
-                        right: -15px;
+                        right: -12px;
                         bottom: -10px;
-                        width: 490px;
-                        height: 490px;
+                        width: 106%;
+                        height: 106%;
                     }
 
                     img {
@@ -370,20 +370,6 @@ body {
                 }
             }
         }
-
-        @media screen and (max-width: 425px) {
-            .row {
-                .profile-section {
-                    &::after {
-                        right: -10px;
-                        bottom: -5px;
-                        width: 105%;
-                        height: 105%;
-                    }
-                }
-            }
-        }
-
     }
 
     #interests {
