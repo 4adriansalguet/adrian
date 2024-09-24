@@ -354,13 +354,14 @@ body {
             .row {
                 .profile-section {
                     &::after {
-                        right: -12px;
-                        bottom: -10px;
+                        right: -10px;
+                        bottom: -8px;
                         width: 106%;
                         height: 106%;
                     }
 
                     img {
+                        max-width: 300px;
                         width: 100%;
                     }
                 }

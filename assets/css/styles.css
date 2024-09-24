@@ -91,13 +91,13 @@ span {
 body {
   background: var(--color-body);
 }
-body header {
+body #site-header {
   background: url("../images/banner.jpg") center no-repeat;
   background-size: cover;
   min-height: 750px;
   position: relative;
 }
-body header::after {
+body #site-header::after {
   content: "";
   background: linear-gradient(transparent 90%, rgba(0, 0, 0, 0.5));
   width: 100%;
@@ -107,23 +107,23 @@ body header::after {
   left: 0;
   z-index: 0;
 }
-body header .container {
+body #site-header .container {
   z-index: 1;
 }
-body header nav .container {
+body #site-header nav .container {
   position: relative;
   z-index: 10;
 }
-body header nav .row {
+body #site-header nav .row {
   justify-content: space-between;
   align-items: center;
 }
-body header nav h3 {
+body #site-header nav h3 {
   font-size: 50px;
   color: var(--color-primary);
   letter-spacing: 1px;
 }
-body header nav ul {
+body #site-header nav ul {
   max-width: 885px;
   width: 100%;
   display: flex;
@@ -132,61 +132,61 @@ body header nav ul {
   font-size: 1.188rem;
   letter-spacing: 0.625;
 }
-body header nav ul li,
-body header nav ul a {
+body #site-header nav ul li,
+body #site-header nav ul a {
   color: var(--color-primary);
   font-weight: 500;
 }
-body header nav ul li i.fa-envelopes-bulk {
+body #site-header nav ul li i.fa-envelopes-bulk {
   font-size: 1.2rem;
   color: var(--color-secondary);
   margin: 0 7px 0 0;
 }
-body header .title {
+body #site-header .title {
   margin: 20px 0;
   text-align: center;
   color: var(--color-primary);
 }
-body header .title h1 {
+body #site-header .title h1 {
   font-size: 60px;
   letter-spacing: 1.5px;
 }
-body header .title h2 {
+body #site-header .title h2 {
   font-size: 75px;
   letter-spacing: 5px;
   line-height: 75px;
 }
-body header .title .links.row {
+body #site-header .title .links.row {
   justify-content: center;
   column-gap: 20px;
   padding: 30px 0;
 }
-body header .title .links.row i {
+body #site-header .title .links.row i {
   font-size: 30px;
   color: var(--color-primary);
 }
 @media screen and (max-width: 768px) {
-  body header::after {
+  body #site-header::after {
     min-height: 0;
   }
-  body header nav .row {
+  body #site-header nav .row {
     justify-content: center;
   }
-  body header nav ul {
+  body #site-header nav ul {
     display: none;
   }
-  body header .title {
+  body #site-header .title {
     margin: 85px 0;
   }
-  body header .title h1 {
+  body #site-header .title h1 {
     font-size: 30px;
     letter-spacing: 1.5px;
   }
-  body header .title h2 {
+  body #site-header .title h2 {
     font-size: 45px;
     letter-spacing: 3px;
   }
-  body header .title .btn {
+  body #site-header .title .btn {
     width: auto;
   }
 }
@@ -282,12 +282,13 @@ body #about .row .short-background .btn {
 }
 @media screen and (max-width: 500px) {
   body #about .row .profile-section::after {
-    right: -12px;
-    bottom: -10px;
+    right: -10px;
+    bottom: -8px;
     width: 106%;
     height: 106%;
   }
   body #about .row .profile-section img {
+    max-width: 300px;
     width: 100%;
   }
   body #about .row .short-background td:nth-child(2) {
