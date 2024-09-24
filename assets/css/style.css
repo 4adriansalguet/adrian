@@ -94,6 +94,7 @@ body header {
   background-size: cover;
   height: 750px;
   position: relative;
+  z-index: 1;
 }
 body header::after {
   content: "";
@@ -105,7 +106,6 @@ body header::after {
   left: 0;
   z-index: 0;
 }
-body header nav nav,
 body header nav .container {
   position: relative;
   z-index: 10;
@@ -343,6 +343,7 @@ body footer .container .form-wrapper form {
 body footer .container .form-wrapper form .row {
   justify-content: space-between;
   margin: 0 0 15px;
+  gap: 20px;
 }
 body footer .container .form-wrapper form .form-group {
   margin-bottom: 15px;
@@ -396,4 +397,4 @@ body footer p {
   margin: 50px 0 0;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
