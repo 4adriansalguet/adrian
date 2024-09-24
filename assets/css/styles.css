@@ -76,6 +76,7 @@ a {
   max-width: 1600px;
   padding: 30px 20px 32px;
   margin: 0 auto;
+  position: relative;
 }
 
 .row {
@@ -104,6 +105,9 @@ body header::after {
   top: 0;
   left: 0;
   z-index: 0;
+}
+body header .container {
+  z-index: 1;
 }
 body header nav .container {
   position: relative;

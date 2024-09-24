@@ -78,6 +78,7 @@ a {
     max-width: 1600px;
     padding: 30px 20px 32px;
     margin: 0 auto;
+    position: relative;
 }
 
 .row {
@@ -107,6 +108,10 @@ body {
             top: 0;
             left: 0;
             z-index: 0;
+        }
+
+        .container {
+            z-index: 1;
         }
 
         nav {
