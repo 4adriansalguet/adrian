@@ -275,19 +275,30 @@ body #about .row .short-background .btn {
     font-family: var(--primary-font);
     margin: 20px auto 0;
   }
+  body #about .container .row .profile-section {
+    margin: 15px 0 25px;
+  }
 }
 @media screen and (max-width: 500px) {
   body #about .row .profile-section::after {
-    right: -10px;
-    bottom: -5px;
-    width: 300px;
-    height: 300px;
+    right: -15px;
+    bottom: -10px;
+    width: 490px;
+    height: 490px;
   }
   body #about .row .profile-section img {
     width: 100%;
   }
   body #about .row .short-background td:nth-child(2) {
     padding: 0 10px 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  body #about .row .profile-section::after {
+    right: -10px;
+    bottom: -5px;
+    width: 105%;
+    height: 105%;
   }
 }
 body #interests .container {
@@ -499,7 +510,7 @@ body footer p {
   color: var(--color-secondary);
   font-size: 14px;
   font-weight: 500;
-  margin: 50px 0 0;
+  padding: 50px 0 10px;
 }
 @media screen and (max-width: 1100px) {
   body footer form .row {
