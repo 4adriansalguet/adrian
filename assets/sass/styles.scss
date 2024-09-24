@@ -189,6 +189,16 @@ body {
 
         }
 
+        @media screen and (max-width: 959) {
+            nav {
+                .container {
+                    .row {
+                        column-gap: 30px;
+                    }
+                }
+            }
+        }
+
         @media screen and (max-width: 768px) {
             &::after {
                 min-height: 0;
