@@ -191,10 +191,8 @@ body {
 
         @media screen and (max-width: 959px) {
             nav {
-                .container {
-                    .row {
-                        column-gap: 30px;
-                    }
+                .row {
+                    column-gap: 30px;
                 }
             }
         }

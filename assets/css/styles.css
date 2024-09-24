@@ -165,6 +165,11 @@ body #site-header .title .links.row i {
   font-size: 30px;
   color: var(--color-primary);
 }
+@media screen and (max-width: 959px) {
+  body #site-header nav .row {
+    column-gap: 30px;
+  }
+}
 @media screen and (max-width: 768px) {
   body #site-header::after {
     min-height: 0;
