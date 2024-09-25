@@ -17,6 +17,8 @@
     --color-form-field: #34353A;
 
     --color-body: #2E2F34;
+    --error: #ee9090;
+    --success: #56b87e;
 }
 
 h1,
@@ -607,6 +609,11 @@ body {
 
                     .form-group {
                         margin-bottom: 15px;
+
+                        small{
+                            color: var(--error);
+                            font-family: var(--primary-font);
+                        }
                     }
 
                     .form-group label {
@@ -627,6 +634,11 @@ body {
                         border-radius: 5px;
                         border-color: transparent;
                         color: var(--color-primary);
+
+                        &.has-error{
+                            border: 1px solid var(--error);
+                            margin-bottom: 10px;
+                        }
                     }
 
                     .form-group textarea {
@@ -636,6 +648,11 @@ body {
                         border-radius: 5px;
                         background: var(--color-form-field);
                         color: var(--color-primary);
+
+                        &.has-error{
+                            border: 1px solid var(--error);
+                            margin-bottom: 10px;
+                        }
                     }
 
                     .form-group input:focus,
@@ -655,6 +672,13 @@ body {
                         display: flex;
                         justify-content: center;
                         margin: 35px auto 0;
+                    }
+
+                    .success-msg{
+                        color: var(--success);
+                        font-family: var(--primary-font);
+                        padding: 20px 0;
+                        text-align: center;
                     }
 
                 }
