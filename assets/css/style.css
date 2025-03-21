@@ -349,11 +349,11 @@ body #projects .container h3 {
 body #projects .container .row {
   justify-content: space-between;
   margin: 0 auto 60px;
-  gap: 24px;
-  flex-wrap: wrap;
+  gap: 45px;
+  flex-wrap: wrap !important;
 }
-body #projects .container .item {
-  max-width: 48%;
+body #projects .container .row .item {
+  max-width: 585px;
   width: 100%;
   min-height: 454px;
   background: var(--color-tertiary);
@@ -362,13 +362,13 @@ body #projects .container .item {
   padding: 60px 50px;
   border-radius: 5px;
 }
-body #projects .container .item h4 {
+body #projects .container .row .item h4 {
   margin: 0 0 35px;
 }
-body #projects .container .item p {
+body #projects .container .row .item p {
   line-height: 30px;
 }
-body #projects .container .item .btn {
+body #projects .container .row .item .btn {
   font-size: 23px;
   background: var(--color-secondary);
   color: var(--color-primary);
@@ -381,13 +381,13 @@ body #projects .container .item .btn {
     justify-content: center;
     flex-wrap: wrap;
   }
-}
-@media screen and (max-width: 768px) {
   body #projects .container .item {
-    max-width: unset;
+    max-width: 100% !important;
     min-height: 0;
     padding: 30px 35px;
   }
+}
+@media screen and (max-width: 768px) {
   body #projects .container .item p {
     line-height: 25px;
   }

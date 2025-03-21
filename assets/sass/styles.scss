@@ -452,37 +452,36 @@ body {
             .row {
                 justify-content: space-between;
                 margin: 0 auto 60px;
-                gap: 24px;
-                flex-wrap: wrap;
-            }
-
-            .item {
-                max-width: 48%;
-                width: 100%;
-                min-height: 454px;
-                background: var(--color-tertiary);
-                box-shadow: 6px 7px 10px var(--color-shadow);
-                color: var(--color-primary);
-                padding: 60px 50px;
-                border-radius: 5px;
-
-                h4 {
-                    margin: 0 0 35px;
-                }
-
-                p {
-                    line-height: 30px;
-                }
-
-                .btn {
-                    font-size: 23px;
-                    background: var(--color-secondary);
+                gap: 45px;
+                flex-wrap: wrap !important;
+                .item {
+                    max-width: 585px;
+                    width: 100%;
+                    min-height: 454px;
+                    background: var(--color-tertiary);
+                    box-shadow: 6px 7px 10px var(--color-shadow);
                     color: var(--color-primary);
-                    border-radius: 50%;
-                    padding: 12px;
-                    margin: 40px 0 0;
+                    padding: 60px 50px;
+                    border-radius: 5px;
+    
+                    h4 {
+                        margin: 0 0 35px;
+                    }
+    
+                    p {
+                        line-height: 30px;
+                    }
+    
+                    .btn {
+                        font-size: 23px;
+                        background: var(--color-secondary);
+                        color: var(--color-primary);
+                        border-radius: 50%;
+                        padding: 12px;
+                        margin: 40px 0 0;
+                    }
+    
                 }
-
             }
 
         }
@@ -494,6 +493,11 @@ body {
                     justify-content: center;
                     flex-wrap: wrap;
                 }
+                .item {
+                    max-width: 100% !important;
+                    min-height: 0;
+                    padding: 30px 35px;
+                }
             }
 
         }
@@ -501,10 +505,6 @@ body {
         @media screen and (max-width: 768px) {
             .container {
                 .item {
-                    max-width: unset;
-                    min-height: 0;
-                    padding: 30px 35px;
-
                     p {
                         line-height: 25px;
                     }
