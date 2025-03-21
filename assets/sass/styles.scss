@@ -452,11 +452,12 @@ body {
             .row {
                 justify-content: space-between;
                 margin: 0 auto 60px;
-                gap: 40px;
+                gap: 24px;
+                flex-wrap: wrap;
             }
 
             .item {
-                max-width: 600px;
+                max-width: 48%;
                 width: 100%;
                 min-height: 454px;
                 background: var(--color-tertiary);
