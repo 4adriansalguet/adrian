@@ -9,12 +9,12 @@
   --heading-font: "Anton";
   --primary-font: "Montserrat";
   --color-default: #000000;
-  --color-primary: #FFFFFF;
-  --color-secondary: #D4AF37;
+  --color-primary: #ffffff;
+  --color-secondary: #d4af37;
   --color-tertiary: #222226;
-  --color-shadow: #1B1B1E;
-  --color-form-field: #34353A;
-  --color-body: #2E2F34;
+  --color-shadow: #1b1b1e;
+  --color-form-field: #34353a;
+  --color-body: #2e2f34;
   --error: #ee9090;
   --success: #56b87e;
 }
@@ -226,7 +226,7 @@ body #about .row .profile-section::after {
   content: "";
   width: 350px;
   height: 350px;
-  background: #D4AF37;
+  background: #d4af37;
   z-index: -1;
 }
 body #about .row .profile-section img {
@@ -253,6 +253,9 @@ body #about .row .short-background table {
 body #about .row .short-background td {
   padding: 8px 0;
   text-align: left;
+}
+body #about .row .short-background td a {
+  color: var(--color-primary);
 }
 body #about .row .short-background td:nth-child(2) {
   padding: 0 30px 0;
@@ -433,126 +436,28 @@ body #experience .container .skills .row {
     line-height: 25px;
   }
 }
-body footer {
-  background: linear-gradient(transparent, black 80%);
-}
-body footer h3 {
-  margin: 0 0 40px;
-}
-body footer .container {
+
+#contact .container {
   max-width: 1258px;
   width: 100%;
   padding: 30px 20px;
 }
-body footer .container .form-wrapper {
-  background: var(--color-tertiary);
-  box-shadow: 6px 7px 10px var(--color-shadow);
-  border-radius: 5px;
-  padding: 50px 70px;
+#contact .container .row {
+  flex-direction: column;
+  gap: 30px;
 }
-body footer .container .form-wrapper h4 {
-  text-align: center;
+#contact .container .row a {
   color: var(--color-primary);
-  margin: 0 0 40px;
-}
-body footer .container .form-wrapper form {
-  max-width: 1096px;
-  width: 100%;
-  margin: 0 auto;
-}
-body footer .container .form-wrapper form .row {
-  justify-content: space-between;
-  margin: 0 0 15px;
-  gap: 20px;
-}
-body footer .container .form-wrapper form .form-group {
-  margin-bottom: 15px;
-}
-body footer .container .form-wrapper form .form-group small {
-  color: var(--error);
   font-family: var(--primary-font);
+  font-weight: 500;
 }
-body footer .container .form-wrapper form .form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-family: var(--primary-font);
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--color-secondary);
-}
-body footer .container .form-wrapper form .form-group input {
-  width: 100%;
-  min-width: 530px;
-  height: 66px;
-  padding: 15px;
-  background: var(--color-form-field);
-  border-radius: 5px;
-  border-color: transparent;
-  color: var(--color-primary);
-}
-body footer .container .form-wrapper form .form-group input.has-error {
-  border: 1px solid var(--error);
-  margin-bottom: 10px;
-}
-body footer .container .form-wrapper form .form-group textarea {
-  width: 100%;
-  padding: 15px;
-  border-color: transparent;
-  border-radius: 5px;
-  background: var(--color-form-field);
-  color: var(--color-primary);
-}
-body footer .container .form-wrapper form .form-group textarea.has-error {
-  border: 1px solid var(--error);
-  margin-bottom: 10px;
-}
-body footer .container .form-wrapper form .form-group input:focus,
-body footer .container .form-wrapper form .form-group textarea:focus {
-  border-color: #D4AF37;
-  outline: none;
-}
-body footer .container .form-wrapper form .form-group input::placeholder,
-body footer .container .form-wrapper form .form-group textarea::placeholder {
-  font-family: var(--primary-font);
-  font-size: 16px;
-  color: #8D8D8D;
-}
-body footer .container .form-wrapper form .btn {
-  display: flex;
-  justify-content: center;
-  margin: 35px auto 0;
-}
-body footer .container .form-wrapper form .success-msg {
-  color: var(--success);
-  font-family: var(--primary-font);
-  padding: 20px 0;
-  text-align: center;
-}
-body footer p {
+
+footer p {
   text-align: center;
   color: var(--color-secondary);
   font-size: 14px;
   font-weight: 500;
   padding: 50px 0 10px;
-}
-@media screen and (max-width: 1100px) {
-  body footer form .row {
-    justify-content: space-between;
-    margin: 0 0 15px;
-    gap: 20px;
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 768px) {
-  body footer .container .form-wrapper {
-    background: var(--color-tertiary);
-    box-shadow: 6px 7px 10px var(--color-shadow);
-    border-radius: 5px;
-    padding: 45px 35px;
-  }
-  body footer .container .form-wrapper form .form-group input {
-    min-width: 0;
-  }
 }
 
 @media screen and (max-width: 768px) {
